@@ -43,13 +43,21 @@ else
     else
     {console.log(`НЕ ВІРНО`)}
 
+    //- Ми маємо змінну x в яку користувач задає  значення,  якщо в змінну записане число, вивести 1,
+      //  якщо в змінну записали стрінгу вивести 2, якщо булеве значення - 3, якщо об'єкт або масив - 3.
+    //якщо в змінну записали щось інше, спрацьовує else
 
-
-
-
-
-
-
+    let  x = [""];
+    if (typeof x === `number`)
+    {document.write(`<h1>Це число</h1>`)}
+    else if (typeof x === "string")
+    {document.write(`<h1>Це текст</h1>`)}
+    else if (typeof x === "boolean")
+    {document.write(`<h1>Це булеве значення</h1>`)}
+    else if (typeof x === "object")
+    {document.write(`<h1>Це об'єкт</h1>`)}
+    else
+    {document.write(`<h1>else</h1>`)}
 
 </script>
 </body>
