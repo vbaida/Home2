@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+let time = +prompt(`Введіть число від 0 до 59`)
+if (time<=15)
+    console.log(`Ця хвилина належить до першої четверті години`)
+
+else if (time<=30)
+{console.log(`Ця хвилина належить до другої четверті години`)}
+
+else if (time<=45)
+{console.log(`Ця хвилина належить до третьої четверті години`)}
+
+else if (time<=60)
+{console.log(`Ця хвилина належить до четвертої четверті години`)}
+
+//- У змінній day дано якесь число від 1 до 31. Потрібно визначити,
+  //  у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+
+let day = +prompt(`Введіть необхідну дату місяця`)
+if (day<=10)
+{console.log(`Це число належить до першої декади місяця`)}
+
+else if (day<=20)
+{console.log(`Це число належить до другої декади місяця`)}
+
+else if (day<=30)
+{console.log(`Це число належить до третьої декади місяця`)}
+
+//- У нас є змінна test, якщо  не дорівнює true, виведіть 'Вірно', інакше виведіть 'Неправильно'.
+  //  Перевірте роботу скрипта при test, що дорівнює true, false. Напишіть два варіанти скрипта -
+//  з коротким записом(тернаркою)
+
+
+let test = 'jgvkhv'
+if (test !== true) {console.log(`Вірно`)}
+else { console.log('НЕ вірно')}
+
+if (test === false) {console.log(`Вірно`)}
+else { console.log('НЕ вірно')}
+
+//- Якщо змінна a не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.
+// Перевірте  скрипт при a, що дорівнює 1, 0, -3
+
+let a = +prompt('Введіть число')
+if (a!==0) {console.log(`Вірно`)}
+else {console.log('Не вірно')}
+
+//- Скласти розклад на тиждень за домопоги switch.
+// Користувач вводить порядковий номер дня тижня і на екрані
+// відображається інфа що заплановано на цей день.
+
+let key = +prompt('Введіть порядковий номер дня тижня')
+switch (key) {
+    case 1: console.log(`Понеділок: Сьогодны у тебе нарада`);
+break;
+case 2: console.log(`Вівторок: Сьогодні у тебе зустріч`);
+break;
+case 3: document.write(`<h1>Середа: Сьогодні у тебе сауна</h1>`);
+break;
+case 4: console.log(`Четвер: Сьогодні у тебе молитва`);
+break;
+case 5: console.log(`Пятниця: Зранку у тебе нарада`);
+break;
+case 6: console.log(`Субота: Шашлик`);
+break;
+case 7: console.log(`НЕділя: Поїздка до рідних`);
+default:
+    console.log(`Такого дня тижня не існує`)
+}
+
+//- Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.
+
+let year = +prompt('Введіть рік');
+if (year % 4 ===0)
+    console.log(`Високосний рік`);
+else
+    console.log(`Рік невисокосний`)
+    //- Використовуючи конструкцію if..else, напишіть код, який запитуватиме:
+// „Яка «офіційна» назва JavaScript?“
+//Якщо користувач вводить «ECMAScript», то показати:
+// «Правильно!», інакше – відобразити: «Не знаєте? ECMAScript
+
+let name = prompt(`Яка офіційна назва JavaScript?`)
+    if (name === `ECMAScript`)
+    console.log(`Правильно`);
+    else
+        console.log(`Не знаєте? ECMAScript`)
+
+</script>
+
+
+</body>
+</html>
