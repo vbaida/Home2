@@ -16,11 +16,11 @@
     let number = +prompt(`Введіть перше число`)
 let number2  = +prompt(`Введіть друге число`)
 if (number>number2)
-console.log(number)
+{console.log(`Більше число є`, number)}
     else
-{console.log(number2)}
+{console.log(`Більше число є`, number2)}
 if (number === number2)
-{console.log(`Рівні`)}
+{console.log(`Дані числа є рівні`)}
 
    // - У першому під'їзді квартири з 1 до 20. У другому з 21 по 48. У третьому з 49 по 90.
     //Користувач вводить номер квартири просто в змінні або через prompt('') .
@@ -93,6 +93,9 @@ else
             break;
         case 6:
             alert('НАЖАЛЬ!!!!!!! ВИ ПРОГРАЛИ УСЕ')
+            break;
+            default:
+                alert(`Ви ввели невірне число`)
     }
 
 </script>
